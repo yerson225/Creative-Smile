@@ -6,13 +6,6 @@ $contrasena = getenv('DB_PASS');
 $db         = getenv('DB_NAME');
 $puerto     = getenv('DB_PORT');
 
-// TEMPORAL - Para depurar (quitar después de que funcione)
-echo "<h3>Intentando conectar con:</h3>";
-echo "Host: " . ($servidor ?: 'NO DEFINIDO') . "<br>";
-echo "Usuario: " . ($usuario ?: 'NO DEFINIDO') . "<br>";
-echo "Database: " . ($db ?: 'NO DEFINIDO') . "<br>";
-echo "Puerto: " . ($puerto ?: 'NO DEFINIDO') . "<br>";
-echo "<hr>";
 
 // Verificar que todas las variables existan
 if (!$servidor || !$usuario || !$contrasena || !$db || !$puerto) {
