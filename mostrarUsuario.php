@@ -190,7 +190,7 @@ nav ul {
         }
 
         $sql = "SELECT u.*, r.nombre_rol 
-        FROM copia_respaldo.usuario u
+        FROM railway.usuario u
         INNER JOIN copia_respaldo.uso_roles ur ON u.id_usuario = ur.id_usuario
         INNER JOIN copia_respaldo.roles r ON ur.id_roles = r.id_roles
         $where";
