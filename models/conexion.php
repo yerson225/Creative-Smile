@@ -24,8 +24,7 @@ try {
         die("Falla en la conexión MySQL: " . $conexion->connect_error);
     }
     
-    // TEMPORAL - Confirmar conexión exitosa
-    echo "<div style='color: green; font-weight: bold;'>✅ Conexión exitosa a MySQL!</div><br>";
+
     
 } catch (Exception $e) {
     die("Error de conexión: " . $e->getMessage());
