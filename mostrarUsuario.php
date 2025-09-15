@@ -191,8 +191,8 @@ nav ul {
 
         $sql = "SELECT u.*, r.nombre_rol 
         FROM railway.usuario u
-        INNER JOIN copia_respaldo.uso_roles ur ON u.id_usuario = ur.id_usuario
-        INNER JOIN copia_respaldo.roles r ON ur.id_roles = r.id_roles
+        INNER JOIN railway.uso_roles ur ON u.id_usuario = ur.id_usuario
+        INNER JOIN crailway.roles r ON ur.id_roles = r.id_roles
         $where";
         $resultado = $conexion->query($sql);
     ?>
