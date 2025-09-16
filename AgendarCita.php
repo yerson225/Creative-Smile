@@ -201,7 +201,12 @@ include "models/conexion.php";
               echo "<li>";
               echo "Doctor: " . $fila['nombre'] . " " . $fila['apellido'] . " | Fecha: " . $fila['fecha_cita'] . 
                    " | Hora: " . $fila['hora_inicial'] . " - " . $fila['hora_final'] . " | Especialidad: " . $fila['especialidad'];
-            echo "<a href='AgendarCitaFinal.php?id_cita=" . $fila['id_cita'] . "'>Agendar</a>";
+
+
+            echo "<a href='AgendarCitaFinal.php?id_cita=" . $fila['id_cita'] . "' class='btn btn-primary btn-sm ms-3'>Agendar</a>";
+
+
+
               echo "</li>";
             }
             echo "</ul>";
